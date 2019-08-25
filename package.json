@@ -24,7 +24,7 @@
   "bugs": "https://github.com/kosalanuwan/cucumber-hello-world/issues",
   "homepage": "https://github.com/kosalanuwan/cucumber-hello-world#readme",
   "engines": {
-    "node": ">=10.16",
+    "node": ">=10.15",
     "yarn": ">=1.17"
   },
   "scripts": {
@@ -42,8 +42,9 @@
     "install": "echo \"WARNING: no install specified\"",
     "postinstall": "echo \"WARNING: no post-install specified\"",
     "prepare": "echo \"WARNING: no prepare specified\"",
+    "e2e": "protractor",
     "pretest": "yarn run make:tree && yarn run rd .temp/**/*",
-    "test:fast": "echo \"WARNING: no test-fast specified\"",
+    "test:fast": "yarn run e2e config/config.js",
     "test:slow": "echo \"WARNING: no test-slow specified\"",
     "test:external": "echo \"WARNING: no test-external specified\"",
     "test": "yarn run test:fast && yarn run test:slow && yarn run test:external",
