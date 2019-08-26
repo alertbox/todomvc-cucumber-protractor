@@ -18,7 +18,24 @@ To get started with your own Test Automation Project, [**you don't need to clone
 
 ## Prerequisites
 
-TBD
+In order to download necessary tools, clone the repo, and install dependencies via `yarn`, you need access to the internet :)
+
+You'll need the following tools:
+
+- [Git]()
+- [NodeJS](), x64, version `>=10.15`
+- [Yarn](), version `>=1.17`, follow the [installation guide]()
+- [Python](), version 2.7
+  - **Note:** macOS ships with Python v2.7. Above link is only for contributors that are not on macOS.
+- [Visual Studio Code]()
+  - **Note:** Recommended extensions are mentioned in the [`recommend.json`](). This should automatically appear in your Extensions pane once open the code base.
+
+Install and build all the dependencies using `yarn`.
+```bash
+git clone https://github.com/kosalanuwan/cucumber-hello-world
+cd cucumber-hello-world
+yarn run clean:install
+```
 
 ## Build and Run
 
