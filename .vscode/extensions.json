@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "visualstudioexptteam.vscodeintellicode",
+        "msjsdiag.debugger-for-chrome",
+        "msjsdiag.debugger-for-edge",
+        "redhat.vscode-yaml",
+        "docsmsft.docs-yaml",
+        "ms-vscode.vscode-typescript-next",
+        "dbaeumer.vscode-eslint",
+    ],
+}
