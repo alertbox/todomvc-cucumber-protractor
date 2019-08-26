@@ -1,6 +1,3 @@
-require('../loaders/use-chai-as-promised');
-require('../loaders/use-extended-timeout');
-
 module.exports = {
     config: {
         SELENIUM_PROMISE_MANAGER: false,
@@ -34,12 +31,16 @@ module.exports = {
         capabilities: {
             browserName: 'chrome',
             shardTestFiles: true,
+            chromeOptions: {
+                // args: ['--headless', '--disable-gpu']
+            },
         },
 
         plugins: [],
 
         onPrepare: function () {
-            require('../loaders/use-ng-opt-out-browser');
+            require('../loaders/use-chai-as-promised').use();
+            require('../loaders/use-ng-opt-out-browser').use();
         },
 
         onCleanUp: function () {},
