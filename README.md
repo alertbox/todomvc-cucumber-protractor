@@ -28,7 +28,7 @@ You'll need the following tools:
 - [Python](), version 2.7
   - **Note:** macOS ships with Python v2.7. Above link is only for contributors that are not on macOS.
 - [Visual Studio Code]()
-  - **Note:** Recommended extensions are mentioned in the [`recommend.json`](). This should automatically appear in your Extensions pane once open the code base.
+  - **Note:** Recommended extensions are mentioned in the [`extensions.json`](). This should automatically appear in your Extensions pane once open the code base.
 
 Install and build all the dependencies using `yarn`.
 ```bash
