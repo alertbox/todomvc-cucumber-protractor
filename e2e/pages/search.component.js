@@ -6,11 +6,13 @@ module.exports = {
     queryInputElement: element(by.css('.header-search-input')),
     searchFormElement: element(by.css('.js-site-search-form')),
 
-    search: function () {
+    query: async function (text) {
         const self = this;
-
-        return self.queryInputElement.sendKeys('kosalanuwan')
-            .then(function () { return self.searchFormElement.submit(); })
-            .then(function () { return browser.wait(EC.urlContains('q=kosalanuwan')); });
+        
+        await self.queryInputElement.sendKeys(text);
+        await self.searchFormElement.submit();
+        
+        const queryString = 'q=' + text;
+        return await browser.wait(EC.urlContains(queryString));
     },
 };

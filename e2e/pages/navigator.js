@@ -1,5 +1,5 @@
 const { browser } = require('protractor');
 
 module.exports = {
-    gotoGitHub: function () { return browser.get(''); },
+    gotoGitHub: async function () { return await browser.get(''); },
 };
