@@ -18,7 +18,7 @@ To get started with your own Test Automation Project, [**you don't need to clone
 
 ## Prerequisites
 
-In order to download necessary tools, clone the repo, and install dependencies via `yarn`, you need access to the internet :)
+In order to download necessary tools, clone the repo, and install dependencies via `yarn`, you need access to the internet :rocket:
 
 You'll need the following tools:
 
