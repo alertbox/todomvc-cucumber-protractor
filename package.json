@@ -44,7 +44,7 @@
     "prepare": "echo \"WARNING: no prepare specified\"",
     "e2e": "protractor",
     "pretest": "yarn run make:tree && yarn run rd .temp/**/*",
-    "test:fast": "yarn run e2e config/config.js",
+    "test:fast": "yarn run e2e config/config.local.js",
     "test:slow": "echo \"WARNING: no test-slow specified\"",
     "test:external": "echo \"WARNING: no test-external specified\"",
     "test": "yarn run test:fast && yarn run test:slow && yarn run test:external",
