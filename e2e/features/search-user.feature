@@ -4,5 +4,5 @@ Feature: To search users in GitHub
 Scenario: Searching on GitHub
 
     Given the user visits GitHub
-    When a contributor name types and hit enter
+    When a contributor search for "kosalanuwan"
     Then the search result summary should have at least 1 contributor
