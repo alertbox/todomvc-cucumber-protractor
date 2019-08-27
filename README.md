@@ -10,7 +10,7 @@ What's included:
 
 - A simple Gherkin example of e2e testing
 - Uses CucumberJS + Protractor framework
-- Uses Yarn scripts for common operations
+- Uses `yarn` scripts for common operations
 - Uses ESLint with recommended rules to enforce consistent code style
 
 ## Table of Content
@@ -66,7 +66,7 @@ git pull
 ```
 Manage any merge conflicts, commit, and then push them to your upstream repo.
 
-### Available yarn scripts
+### Available `yarn` scripts
 
 - `clean:install` - remove temp data, node modules, cache, and install everything as needed, then run the webdriver-manager for you.
 - `test` - run all the fast, slow, and external tests.
