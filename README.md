@@ -1,22 +1,35 @@
 # Cucumber Hello World
 
-Template project to kick start end-to-end testing using CucumberJS + Protractor with Gherkin style.
+Minimalistic template project to kick start Gherkin style end-to-end testing using CucumberJS + Protractor.
 
-### Important
+> **Important!**
+>
+> To get started with your own Test Automation Project, [**you don't need to clone this repo anymore.**](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/) Just click the [`Use this template`](https://github.com/kosalanuwan/cucumber-hello-world/generate) button from the top. To learn more about GitHub Template Projects, visit this [link](https://help.github.com/en/articles/creating-a-repository-from-a-template).
 
-To get started with your own Test Automation Project, [**you don't need to clone this repo anymore.**](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/) Just click the [`Use this template`](https://github.com/kosalanuwan/cucumber-hello-world/generate) button from the top. To learn more about GitHub Template Projects, visit this [link](https://help.github.com/en/articles/creating-a-repository-from-a-template).
+What's included:
+
+- A simple Gherkin example of e2e testing
+- Uses CucumberJS + Protractor framework
+- Uses Yarn scripts for common operations
+- Uses ESLint with recommended rules to enforce consistent code style
 
 ## Table of Content
 
-- [Requirements](#requirements)
-- [Build and Run](#build-and-run)
+- [Quick Start](#quick-start)
+  - [Prerequisites](#prerequisites)
+  - [Build and run](#build-and-run-from-source)
+  - [File structure](#file-structure-of-starter-kit)
 - [Contributing](#contributing)
 - [Feedback](#feedback)
 - [Related Projects](#related-projects)
 - [Code of Conduct](#code-of-conduct)
 - [License](#license)
 
-## Requirements
+## Quick Start
+
+If you want to understand how starter kit works or want to debug an issue or build your automation test suite, you'll want to get the source code, build it, and run it locally.
+
+### Prerequisites
 
 In order to download necessary tools, clone the repo, install dependencies via `yarn`, you need internet access.
 
@@ -30,13 +43,9 @@ You'll need the following tools:
 - [Visual Studio Code]()
   > Recommended extensions are mentioned in the [`extensions.json`](). This should automatically appear in your Extensions pane once open the code base.
 
-## Build and Run
+### Build and run from source
 
-If you want to understand how starter kit works or want to debug an issue or build your automation test suite, you'll want to get the source code, build it, and run it locally.
-
-### Getting the source Code
-
-First, fork or create a new repo using the starter template. Then, clone your repo locally:
+First, fork or create a new repo using the starter template. Then, clone your repo locally.
 
 With VS Code:
 
@@ -56,7 +65,7 @@ git pull
 ```
 Manage any merge conflicts, commit, and then push them to your upstream repo.
 
-### File structure
+### File structure of starter kit
 ```bash
 cucumber-hello-world
 │

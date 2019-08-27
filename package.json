@@ -1,6 +1,6 @@
 {
   "name": "cucumber-hello-world",
-  "description": "Template kick starter for CucumberJS + Protractor end-to-end testing.",
+  "description": "Minimalistic template project to kick start Gherkin style end-to-end testing using CucumberJS + Protractor.",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/kosalanuwan/cucumber-hello-world",
@@ -17,6 +17,7 @@
     "protractor",
     "e2e",
     "bdd",
+    "gherkin",
     "behavior-driven-development"
   ],
   "author": "Alertbox and the contributors",
