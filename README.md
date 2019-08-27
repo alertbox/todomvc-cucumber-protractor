@@ -8,7 +8,7 @@ To get started with your own Test Automation Project, [**you don't need to clone
 
 ## Table of Content
 
-- [Prerequisites](#prerequisites)
+- [Requirements](#requirements)
 - [Build and Run](#build-and-run)
 - [Contributing](#contributing)
 - [Feedback](#feedback)
@@ -16,9 +16,9 @@ To get started with your own Test Automation Project, [**you don't need to clone
 - [Code of Conduct](#code-of-conduct)
 - [License](#license)
 
-## Prerequisites
+## Requirements
 
-In order to download necessary tools, clone the repo, install dependencies via `yarn`, you need internet access :rocket:
+In order to download necessary tools, clone the repo, install dependencies via `yarn`, you need internet access.
 
 You'll need the following tools:
 
@@ -26,20 +26,74 @@ You'll need the following tools:
 - [NodeJS](), x64, version `>=10.15`
 - [Yarn](), version `>=1.17`, follow the [installation guide]()
 - [Python](), version 2.7
-  - **Note:** macOS ships with Python v2.7. Above link is only for contributors that are not on macOS.
+  > macOS ships with Python v2.7. Above link is only for contributors that are not on macOS.
 - [Visual Studio Code]()
-  - **Note:** Recommended extensions are mentioned in the [`extensions.json`](). This should automatically appear in your Extensions pane once open the code base.
-
-Install and build all the dependencies using `yarn`.
-```bash
-git clone https://github.com/kosalanuwan/cucumber-hello-world
-cd cucumber-hello-world
-yarn run clean:install
-```
+  > Recommended extensions are mentioned in the [`extensions.json`](). This should automatically appear in your Extensions pane once open the code base.
 
 ## Build and Run
 
-TBD
+If you want to understand how starter kit works or want to debug an issue or build your automation test suite, you'll want to get the source code, build it, and run it locally.
+
+### Getting the source Code
+
+First, fork or create a new repo using the starter template. Then, clone your repo locally:
+
+With VS Code:
+
+- Install and build all the dependencies using `yarn`.
+```bash
+git clone https://github.com/<your-github-account>/cucumber-hello-world
+cd cucumber-hello-world
+```
+- Run `yarn run clean:install` from the project root.
+- Run `yarn run test:fast` from the project root.
+
+Occationally, you will want to merge changes in the upstream repo, the official starter kit repo.
+```bash
+cd cucumber-hello-world
+git checkout master
+git pull
+```
+Manage any merge conflicts, commit, and then push them to your upstream repo.
+
+### File structure
+```bash
+cucumber-hello-world
+│
+├── .vscode/
+│   ├── extensions.json
+│   ├── launch.json
+│   ├── settings.json
+│   └── tasks.json
+│
+├── config/
+│   └── config.local.js
+│
+├── e2e/
+│   ├── features/
+│   │   └── search-contributor.feature
+│   │
+│   ├── pages/
+│   │   ├── index.js
+│   │   ├── navigator.js
+│   │   ├── search-summary.component.js
+│   │   └── search.component.js
+│   │
+│   └── steps/
+│       └── search-contributor.steps.js
+│
+├── hooks/
+│
+├── loaders/
+│   ├── use-chai-as-promised.js
+│   └── use-ng-optout-browser.js
+│
+├── .eslintrc.yml
+├── .gitignore
+├── .npmrc
+├── package.json
+└── README.md
+```
 
 ## Contributing
 
