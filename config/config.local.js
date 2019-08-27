@@ -4,7 +4,7 @@ module.exports = {
         directConnect: true,
 
         baseUrl: 'https://github.com',
-        getPageTimeout: 60000, // Default 30000
+        getPageTimeout: 60000, // Default 5000
         allScriptsTimeout: 60000,
 
         framework: 'custom',
@@ -31,16 +31,14 @@ module.exports = {
         capabilities: {
             browserName: 'chrome',
             shardTestFiles: true,
-            chromeOptions: {
-                // args: ['--headless', '--disable-gpu']
-            },
+            chromeOptions: {},
         },
 
         plugins: [],
 
         onPrepare: function () {
             require('../loaders/use-chai-as-promised').use();
-            require('../loaders/use-ng-opt-out-browser').use();
+            require('../loaders/use-ngopt-out-browser').use();
         },
 
         onCleanUp: function () {},
