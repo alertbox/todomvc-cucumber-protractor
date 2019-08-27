@@ -9,9 +9,11 @@ Minimalistic template project to kick start Gherkin style end-to-end testing usi
 What's included:
 
 - A simple Gherkin example of e2e testing
+- Uses features, steps, and page objects
 - Uses CucumberJS + Protractor framework
-- Uses `yarn` scripts for common operations
+- Uses Babel to support ES6 on NodeJS
 - Uses ESLint with recommended rules to enforce consistent code style
+- Uses `yarn` scripts for common operations
 
 ## Table of Content
 
