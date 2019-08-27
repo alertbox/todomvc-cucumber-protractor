@@ -18,6 +18,7 @@ What's included:
 - [Quick Start](#quick-start)
   - [Prerequisites](#prerequisites)
   - [Build and run](#build-and-run-from-source)
+  - [Available scripts](#available-yarn-scripts)
   - [File structure](#file-structure-of-starter-kit)
 - [Contributing](#contributing)
 - [Feedback](#feedback)
@@ -64,6 +65,16 @@ git checkout master
 git pull
 ```
 Manage any merge conflicts, commit, and then push them to your upstream repo.
+
+### Available yarn scripts
+
+- `clean:install` - remove temp data, node modules, cache, and install everything as needed, then run the webdriver-manager for you.
+- `test` - run all the fast, slow, and external tests.
+- `clean` - remove temp data, node modules, and clear cache only.
+- `install` - install all project dependencies only.
+- `prepare:wd` - update and run webdriver-manager for you.
+- `test:fast` - run all the fast tests.
+- `vet:quiet` - check for code violations.
 
 ### File structure of starter kit
 ```bash
