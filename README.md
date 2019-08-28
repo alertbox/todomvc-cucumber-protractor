@@ -107,8 +107,8 @@ cucumber-hello-world
 ├── hooks/                                    # Contains all the hooks for Cucumber
 │
 ├── plugins/                                  # Contains all the Ptor plugins 
-│   ├── use-chai-as-promised.js               # Plugin to configure chai and chai-as-promised
-│   └── use-ng-optout-browser.js              # Plugin to configure protractor browser
+│   ├── chai-as-promised.plugin.js            # Plugin to configure chai and chai-as-promised
+│   └── ng-optout-browser.plugin.js           # Plugin to configure protractor browser
 │
 ├── .eslintrc.yml                             # Defines javascript coding styles
 ├── .gitignore                                # Everything that must not be in this repo

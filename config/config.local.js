@@ -32,8 +32,8 @@ exports = module.exports = {
         },
 
         plugins: [
-            { path: '../plugins/use-chai-as-promised.js', }, 
-            { path: '../plugins/use-ng-optout-browser.js', },
+            { path: '../plugins/chai-as-promised.plugin.js', }, 
+            { path: '../plugins/ng-optout-browser.plugin.js', },
         ],
 
         beforeLaunch: function () {},
