@@ -1,8 +1,23 @@
-Feature: To search users in GitHub
-    A user can search other contributors in GitHub.
+# language: en
+@search @functional @gui @uat
+Feature: Search contributors on GitHub
+    A user can search for contributors on GitHub.
 
-Scenario: Searching on GitHub
+@regression @integration @ci
+Scenario Outline: Searching on GitHub
 
     Given the user visits GitHub
-    When a contributor search for "kosalanuwan"
+    When a contributor search for "<contributor>"
     Then the search result summary should have at least 1 contributor
+
+    @smoke
+    Examples:
+        | contributor   |
+        | kosalanuwan   |
+        | alertbox      |
+        | 99xt          |
+    
+    @sanity @security
+    Examples:
+        | contributor   |
+        | Alertbox Inc  |

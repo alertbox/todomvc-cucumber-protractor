@@ -12,7 +12,7 @@ module.exports = {
         await self.queryInputElement.sendKeys(text);
         await self.searchFormElement.submit();
         
-        const queryString = 'q=' + text;
+        const queryString = 'q=' + text.replace(/\ /g, '+');
         return await browser.wait(EC.urlContains(queryString));
     },
 };

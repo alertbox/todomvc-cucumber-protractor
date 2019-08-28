@@ -19,7 +19,7 @@ exports = module.exports = {
             requireModule: [],
             require: ['../e2e/**/*.js',],
             format: 'json:./.temp/results.json',
-            tags: [],
+            tags: ['@sanity or @fast'],
             strict: true,
             dryRun: false,
             compiler: [],

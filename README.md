@@ -9,7 +9,7 @@ Minimalistic template project to kick start Gherkin style end-to-end testing usi
 What's included:
 
 - A simple Gherkin example of e2e testing
-- Uses features, steps, and page objects
+- Uses features, steps, page objects, and tags
 - Uses `cucumberjs` and `protractor` frameworks
 - Uses ptor plugins to wire `chai-as-promised` and `browser` configurations
 - Uses `eslint` with recommended rules to enforce consistent code style
