@@ -1,5 +1,5 @@
-const { Given, When, Then } = require('cucumber');
 const { expect } = require('chai');;
+const { Given, When, Then } = require('cucumber');
 const { navigator, searchPane, searchSummaryPane } = require('../pages');
 
 Given('the user visits GitHub', { timeout: 60 * 1000 }, async function () {

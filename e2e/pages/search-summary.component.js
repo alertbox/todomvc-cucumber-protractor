@@ -2,7 +2,7 @@ const { browser, ExpectedConditions, element } = require('protractor');
 
 const EC = ExpectedConditions;
 
-module.exports = {
+exports = module.exports = {
     resultsPaneElement: element.all(by.css('span[data-search-type="Users"]')).first(),
 
     countUsers: async function () {
