@@ -1,18 +1,22 @@
-const { browser, ExpectedConditions, element } = require('protractor');
-
+const { browser, ExpectedConditions, element, By } = require('protractor');
 const EC = ExpectedConditions;
 
-module.exports = {
-    queryInputElement: element(by.css('.header-search-input')),
-    searchFormElement: element(by.css('.js-site-search-form')),
+const SearchComponent = function () {
+    const $self = this;
 
-    query: async function (text) {
-        const self = this;
-        
-        await self.queryInputElement.sendKeys(text);
-        await self.searchFormElement.submit();
-        
+    const queryInputElement = element(By.css('.header-search-input'));
+    const searchFormElement = element(By.css('.js-site-search-form'));
+
+    $self.query = query;
+    return $self;
+
+    async function query (text) {
+        await queryInputElement.sendKeys(text);
+        await searchFormElement.submit();
+
         const queryString = 'q=' + text.replace(/\ /g, '+');
-        return await browser.wait(EC.urlContains(queryString));
-    },
+        return browser.wait(EC.urlContains(queryString));
+    }
 };
+
+exports = module.exports = new SearchComponent();

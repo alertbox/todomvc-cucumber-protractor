@@ -1,18 +1,23 @@
-const { browser, ExpectedConditions, element } = require('protractor');
-
+const { browser, ExpectedConditions, element, By } = require('protractor');
 const EC = ExpectedConditions;
 
-exports = module.exports = {
-    resultsPaneElement: element.all(by.css('span[data-search-type="Users"]')).first(),
+const SearchSummaryComponent = function () {
+    const $self = this;
+    
+    const resultsPaneElement = element.all(By.css('span[data-search-type="Users"]')).first();
 
-    countUsers: async function () {
-        const self = this;
-        const presenceOf = EC.presenceOf(self.resultsPaneElement);
-        const tobeClickable = EC.elementToBeClickable(self.resultsPaneElement);
+    $self.countUsers = countUsers;
+    return $self;
+
+    async function countUsers () {
+        const presenceOf = EC.presenceOf(resultsPaneElement);
+        const tobeClickable = EC.elementToBeClickable(resultsPaneElement);
 
         await browser.wait(EC.and(presenceOf, tobeClickable));
-        const nrOfContributorsAsString = await self.resultsPaneElement.getText();
+        const nrOfContributorsAsString = await resultsPaneElement.getText();
 
         return parseInt(nrOfContributorsAsString);
-    },
+    }
 };
+
+exports = module.exports = new SearchSummaryComponent();
