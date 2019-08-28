@@ -11,7 +11,7 @@ What's included:
 - A simple Gherkin example of e2e testing
 - Uses features, steps, and page objects
 - Uses CucumberJS + Protractor framework
-- Uses Babel to support ES6 on NodeJS
+- Uses ptor plugins to wire `chai-as-promised` and `browser` configurations
 - Uses ESLint with recommended rules to enforce consistent code style
 - Uses `yarn` scripts for common operations
 
