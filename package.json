@@ -37,7 +37,7 @@
     "wd:update": "yarn run wd update",
     "wd:start": "yarn run wd start",
     "prepare:wd": "yarn run wd:update && yarn run wd:start",
-    "clear:cache": "yarn cache clean --force",
+    "clean:cache": "yarn cache clean --force",
     "clean": "yarn run clean:cache && yarn run shake:tree",
     "clean:install": "yarn run clean && yarn install && yarn run make:tree && yarn run prepare:wd",
     "preinstall": "echo \"WARNING: no pre-install specified\"",
