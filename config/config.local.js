@@ -1,4 +1,4 @@
-module.exports = {
+exports = module.exports = {
     config: {
         SELENIUM_PROMISE_MANAGER: false,
         directConnect: true,
@@ -10,17 +10,14 @@ module.exports = {
         framework: 'custom',
         frameworkPath: require.resolve('protractor-cucumber-framework'),
 
-        specs: [
-            '../e2e/**/*.feature',
-        ],
+        specs: ['../e2e/**/*.feature',],
 
         restartBrowserBetweenTests: false,
         ignoreUncaughtExceptions: true,
 
         cucumberOpts: {
-            require: [
-                '../e2e/**/*.steps.js',
-            ],
+            requireModule: [],
+            require: ['../e2e/**/*.js',],
             format: 'json:./.temp/results.json',
             tags: [],
             strict: true,
@@ -34,12 +31,14 @@ module.exports = {
             chromeOptions: {},
         },
 
-        plugins: [],
+        plugins: [
+            { path: '../plugins/use-chai-as-promised.js', }, 
+            { path: '../plugins/use-ng-optout-browser.js', },
+        ],
 
-        onPrepare: function () {
-            require('../loaders/use-chai-as-promised').use();
-            require('../loaders/use-ngopt-out-browser').use();
-        },
+        beforeLaunch: function () {},
+
+        onPrepare: function () {},
 
         onCleanUp: function () {},
 
