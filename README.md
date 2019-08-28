@@ -82,39 +82,39 @@ Manage any merge conflicts, commit, and then push them to your upstream repo.
 ```bash
 cucumber-hello-world
 │
-├── .vscode/
-│   ├── extensions.json
+├── .vscode/                                 # VS Code workspace configurations
+│   ├── extensions.json                      
 │   ├── launch.json
 │   ├── settings.json
 │   └── tasks.json
 │
-├── config/
-│   └── config.local.js
+├── config/                                   # Contains all Ptor test configurations
+│   └── config.local.js                       # Ptor configuration file to run locally
 │
-├── e2e/
-│   ├── features/
-│   │   └── search-contributor.feature
+├── e2e/                                      # Working directory for Test Automation files
+│   ├── features/                             # Gherkin features and scenarios
+│   │   └── search-contributor.feature        # Example feature, scenarios, data tables, and tags for GitHub search
 │   │
-│   ├── pages/
-│   │   ├── index.js
-│   │   ├── navigator.js
-│   │   ├── search-summary.component.js
-│   │   └── search.component.js
+│   ├── pages/                                # Page objects for Step Definitions
+│   │   ├── index.js                          # Main entry point barrel file
+│   │   ├── navigator.js                      # Example page object for URL navigation
+│   │   ├── search-summary.component.js       # Example page object for verifying DOM content
+│   │   └── search.component.js               # Example page object for feeding data and submitting
 │   │
-│   └── steps/
-│       └── search-contributor.steps.js
+│   └── steps/                                # Step definitions for Gherkin scenarios
+│       └── search-contributor.steps.js       # Example steps definitions for GitHub contributor search and verify
 │
-├── hooks/
+├── hooks/                                    # Contains all the hooks for Cucumber
 │
-├── loaders/
-│   ├── use-chai-as-promised.js
-│   └── use-ng-optout-browser.js
+├── plugins/                                  # Contains all the Ptor plugins 
+│   ├── use-chai-as-promised.js               # Plugin to configure chai and chai-as-promised
+│   └── use-ng-optout-browser.js              # Plugin to configure protractor browser
 │
-├── .eslintrc.yml
-├── .gitignore
-├── .npmrc
-├── package.json
-└── README.md
+├── .eslintrc.yml                             # Defines javascript coding styles
+├── .gitignore                                # Everything that must not be in this repo
+├── .npmrc                                    # Node configurations for workspace
+├── package.json                              # Our javascript and node dependencies
+└── README.md                                 # This file!
 ```
 
 ## Contributing
