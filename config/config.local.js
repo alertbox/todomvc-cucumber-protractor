@@ -28,7 +28,11 @@ exports = module.exports = {
         capabilities: {
             browserName: 'chrome',
             shardTestFiles: true,
-            chromeOptions: {},
+            directConnect: true,
+            chromeOptions: {
+                useAutomationExtension: false,
+                args: ['--headless', '--disable-gpu', '--window-size=1280,1024', ],
+            },
         },
 
         plugins: [
