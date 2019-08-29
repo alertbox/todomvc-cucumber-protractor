@@ -11,6 +11,7 @@ What's included:
 - A simple Gherkin example of e2e testing
 - Uses features, steps, page objects, and tags
 - Uses `cucumberjs` and `protractor` frameworks
+- Uses headless chrome configuration as default
 - Uses ptor plugins to wire `chai-as-promised` and `browser` configurations
 - Uses `eslint` with recommended rules to enforce consistent code style
 - Uses `yarn` scripts for common operations
@@ -38,6 +39,7 @@ In order to download necessary tools, clone the repo, install dependencies via `
 
 You'll need the following tools:
 
+- [Chrome](), version `>=76`
 - [Git]()
 - [NodeJS](), x64, version `>=10.15`
 - [Yarn](), version `>=1.17`, follow the [installation guide]()
