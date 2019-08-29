@@ -1,14 +1,7 @@
 const { browser } = require('protractor');
 
-const Navigator = function () {
-    const $self = this;
+function gotoGitHub() {
+    return browser.get('');
+}
 
-    $self.gotoGitHub = gotoGitHub;
-    return $self;
-
-    function gotoGitHub () {
-        return browser.get('');
-    }
-};
-
-exports = module.exports = new Navigator();
+exports = module.exports = { gotoGitHub };
