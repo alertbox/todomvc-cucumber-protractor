@@ -10,14 +10,14 @@ exports = module.exports = {
         framework: 'custom',
         frameworkPath: require.resolve('protractor-cucumber-framework'),
 
-        specs: ['../e2e/**/*.feature',],
+        specs: ['../e2e/**/*.feature', ],
 
         restartBrowserBetweenTests: false,
         ignoreUncaughtExceptions: true,
 
         cucumberOpts: {
             requireModule: [],
-            require: ['../e2e/**/*.js',],
+            require: ['../e2e/**/*.js', ],
             format: 'json:./.temp/results.json',
             tags: ['@sanity or @fast'],
             strict: true,
