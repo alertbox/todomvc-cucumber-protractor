@@ -9,12 +9,13 @@ Minimalistic template project to kick start Gherkin style end-to-end testing usi
 What's included:
 
 - A simple Gherkin example of e2e testing
+- Uses [`babel`](https://babeljs.io/videos) to support ES6 on NodeJS
 - Uses features, steps, page objects, and tags
-- Uses `cucumberjs` and `protractor` frameworks
+- Uses [`cucumberjs`](https://github.com/cucumber/cucumber-js/) and [`protractor`](https://www.protractortest.org/) frameworks
 - Uses headless chrome configuration as default
-- Uses ptor plugins to wire `chai-as-promised` and `browser` configurations
-- Uses `eslint` with recommended rules to enforce consistent code style
-- Uses `yarn` scripts for common operations
+- Uses ptor plugins to wire [`chai-as-promised`](https://www.chaijs.com/plugins/chai-as-promised/) and `browser` configurations
+- Uses [`eslint`](https://eslint.org/) with recommended rules to enforce consistent code style
+- Uses [`yarn`](https://yarnpkg.com/en/) scripts for common operations
 
 ## Table of Content
 
@@ -39,14 +40,15 @@ In order to download necessary tools, clone the repo, install dependencies via `
 
 You'll need the following tools:
 
-- [Chrome](), version `>=76`
-- [Git]()
-- [NodeJS](), x64, version `>=10.15`
-- [Yarn](), version `>=1.17`, follow the [installation guide]()
-- [Python](), version 2.7
+- [Chrome](https://www.google.com/chrome/), version `>=76`
+- [Git](https://git-scm.com/downloads)
+- [NodeJS](https://nodejs.org/en/download/), x64, version `>=10.15`
+- [Yarn](https://yarnpkg.com/lang/en/docs/install/), version `>=1.17`, follow the installation guide
+- [Python](https://www.python.org/downloads/), version 2.7
   > macOS ships with Python v2.7. Above link is only for contributors that are not on macOS.
-- [Visual Studio Code]()
-  > Recommended extensions are mentioned in the [`extensions.json`](). This should automatically appear in your Extensions pane once open the code base.
+- [JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html), version `>=8`
+- [Visual Studio Code](https://code.visualstudio.com/)
+  > Recommended extensions are mentioned in the [`extensions.json`](https://github.com/kosalanuwan/cucumber-hello-world/blob/master/.vscode/extensions.json). This should automatically appear in your Extensions pane once open the code base.
 
 ### Build and run from source
 
@@ -62,7 +64,7 @@ cd cucumber-hello-world
 - Run `yarn run clean:install` from the project root.
 - Run `yarn run test:fast` from the project root.
 
-Occationally, you will want to merge changes in the upstream repo, the official starter kit repo.
+Occasionally, you will want to merge changes in the upstream repo, the official starter kit repo.
 ```bash
 cd cucumber-hello-world
 git checkout master
@@ -123,24 +125,24 @@ cucumber-hello-world
 
 There are many ways in which you can participate in the project, for example:
 
-- [Use this template]() as a start
-- [Submit bugs and feature requests](), and help us verify as they are checked in
-- Review s[ource code changes]()
-- Review the [documentation]() and make pull requests for anything from typos to new content
+- [Use this template](https://github.com/kosalanuwan/cucumber-hello-world/generate) as a start
+- [Submit bugs and feature requests](https://github.com/kosalanuwan/cucumber-hello-world/issues), and help us verify as they are checked in
+- Review [source code changes](https://github.com/kosalanuwan/cucumber-hello-world/pulls)
+- Review the [documentation](https://github.com/kosalanuwan/cucumber-hello-world/tree/master/docs) and make pull requests for anything from typos to new content
 
 If you are interested in fixing issues and contributing directly to the code base, please see the [Prerequisites](#prerequisites) and [How to build and run from source](#build-and-run).
 
 ## Feedback
 
-- Ask a question on [StackOverflow]()
-- [Request a new feature]()
-- Up vote [popular feature requests]()
-- [File an issue]()
-- Follow [@alertbox]() and let us know what you think!
+- Ask a question on [StackOverflow](https://stackoverflow.com/search?tab=newest&q=protractor%20cucumberjs)
+- Request a new feature on [GitHub](https://github.com/kosalanuwan/cucumber-hello-world/blob/master/CONTRIBUTING.md)
+- Up vote [popular feature requests](https://github.com/kosalanuwan/cucumber-hello-world/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc)
+- [File an issue](https://github.com/kosalanuwan/cucumber-hello-world/issues)
+- Follow [@alertbox](https://twitter.com/kosalanuwan) and let us know what you think!
 
 ## Related Projects
 
-Many of the core components and dependencies live in their own repositories on GitHub. For example, the [CucumberJS]() and the [Protractor]() have their own repositories. For a complete list, please have a look at the dependencies on the [`project.json`]().
+Many of the core components and dependencies live in their own repositories on GitHub. For example, the [`cucumberjs`](https://github.com/cucumber/cucumber-js) and the [`protractor`](https://github.com/angular/protractor) have their own repositories. For a complete list, please have a look at the dependencies on the [`project.json`](https://github.com/kosalanuwan/cucumber-hello-world/blob/master/package.json).
 
 ## Code of Conduct
 
