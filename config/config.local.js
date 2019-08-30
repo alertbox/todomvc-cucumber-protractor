@@ -3,7 +3,7 @@ exports = module.exports = {
         SELENIUM_PROMISE_MANAGER: false,
         directConnect: true,
 
-        baseUrl: 'https://github.com',
+        baseUrl: 'http://todomvc.com/examples/vanillajs/',
         getPageTimeout: 60000, // Default 5000
         allScriptsTimeout: 60000,
 
@@ -29,10 +29,10 @@ exports = module.exports = {
             browserName: 'chrome',
             shardTestFiles: true,
             directConnect: true,
-            chromeOptions: {
-                useAutomationExtension: false,
-                args: ['--headless', '--disable-gpu', '--window-size=1280,1024', ],
-            },
+            // chromeOptions: {
+            //     useAutomationExtension: false,
+            //     args: ['--headless', '--disable-gpu', '--window-size=1280,1024', ],
+            // },
         },
 
         plugins: [

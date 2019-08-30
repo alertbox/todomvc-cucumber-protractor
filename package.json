@@ -1,9 +1,9 @@
 {
-  "name": "cucumber-hello-world",
-  "description": "Minimalistic template project to kick start Gherkin style end-to-end testing using CucumberJS + Protractor.",
+  "name": "todomvc-cucumberjs",
+  "description": "Minimalistic template project to demonstrate Gherkin style End-to-End testing using protractor and cucumberjs.",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/kosalanuwan/cucumber-hello-world",
+  "repository": "https://github.com/kosalanuwan/todomvc-cucumberjs",
   "keywords": [
     "protractor-cucumber-framework",
     "test-automation",
@@ -22,8 +22,8 @@
   ],
   "author": "Alertbox and the contributors",
   "license": "MIT",
-  "bugs": "https://github.com/kosalanuwan/cucumber-hello-world/issues",
-  "homepage": "https://github.com/kosalanuwan/cucumber-hello-world#readme",
+  "bugs": "https://github.com/kosalanuwan/todomvc-cucumberjs/issues",
+  "homepage": "https://github.com/kosalanuwan/todomvc-cucumberjs#readme",
   "engines": {
     "node": ">=10.15",
     "yarn": ">=1.17"
