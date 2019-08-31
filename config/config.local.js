@@ -3,21 +3,21 @@ exports = module.exports = {
         SELENIUM_PROMISE_MANAGER: false,    // Using native async/await
         directConnect: true,                // Bypass Selenium Server
 
-        baseUrl: 'http://todomvc.com/examples/vanillajs/',
+        baseUrl: 'http://todomvc.com/examples/angular/',
         getPageTimeout: 60000,              // Default 5000
         allScriptsTimeout: 60000,
 
         framework: 'custom',
         frameworkPath: require.resolve('protractor-cucumber-framework'),
 
-        specs: ['../e2e/**/*.feature', ],
+        specs: ['../features/**/*.feature', ],
 
         restartBrowserBetweenTests: false,
         ignoreUncaughtExceptions: true,
 
         cucumberOpts: {
             requireModule: [],
-            require: ['../e2e/**/*.js', ],
+            require: ['../steps/**/*.js', '../actions/**/*.js', '../'],
             format: 'json:./.temp/results.json',
             tags: ['@sanity or @fast'],
             strict: true,
