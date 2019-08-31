@@ -61,8 +61,8 @@ With VS Code:
 git clone https://github.com/<your-github-account>/todomvc-cucumberjs
 cd todomvc-cucumberjs
 ```
-- Run `yarn run clean:install` from the project root.
-- Run `yarn run test:fast` from the project root.
+- Run `yarn install` from the project root.
+- Run `yarn test` from the project root.
 
 Occasionally, you will want to merge changes in the upstream repo, the official starter kit repo.
 ```bash
@@ -74,13 +74,13 @@ Manage any merge conflicts, commit, and then push them to your upstream repo.
 
 ### Available `yarn` scripts
 
-- `clean:install` - remove temp data, node modules, cache, and install everything as needed, then run the webdriver-manager for you.
-- `test` - run all the fast, slow, and external tests.
-- `clean` - remove temp data, node modules, and clear cache only.
-- `install` - install all project dependencies only.
-- `prepare:wd` - update and run webdriver-manager for you.
-- `test:fast` - run all the fast tests.
-- `vet:quiet` - check for code violations.
+- `yarn install` - install all project dependencies only.
+- `yarn test` - run all the fast, slow, and external tests.
+- `yarn run clean:install` - remove temp data, cache, and install everything as needed, then run the webdriver-manager for you.
+- `yarn run clean` - remove temp data, node modules, and clear cache only.
+- `yarn prepare` - update and run webdriver-manager for you.
+- `yarn run test:fast` - run all the fast tests.
+- `yarn run vet:quiet` - check for code violations.
 
 ### File structure of starter kit
 ```bash
