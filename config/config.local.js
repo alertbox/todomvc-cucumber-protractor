@@ -1,10 +1,10 @@
 exports = module.exports = {
     config: {
-        SELENIUM_PROMISE_MANAGER: false,
-        directConnect: true,
+        SELENIUM_PROMISE_MANAGER: false,    // Using native async/await
+        directConnect: true,                // Bypass Selenium Server
 
         baseUrl: 'http://todomvc.com/examples/vanillajs/',
-        getPageTimeout: 60000, // Default 5000
+        getPageTimeout: 60000,              // Default 5000
         allScriptsTimeout: 60000,
 
         framework: 'custom',
