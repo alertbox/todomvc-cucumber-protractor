@@ -1,6 +1,6 @@
 const { Given, When, Then, } = require('cucumber');
 const { visitHomepage, addNewTodos, } = require('../actions/tasks');
-const { shallSeeTodosOf, } = require('../actions/questions');
+const { shallSeeTodosOf, shallSeeTodosCountOf, } = require('../actions/questions');
 
 Given('that KP already has a list of things to do such as {string}', { timeout: 60 * 1000 }, async function (todos) {
     await visitHomepage();
@@ -13,4 +13,8 @@ When('he adds {string} to the list', async function (todos) {
 
 Then('he shall see both {string} and {string} in the todo list', async function (oldTodos, newTodos) {
     return shallSeeTodosOf(oldTodos + ', ' + newTodos);
+});
+
+Then('his number of todo items shall increase up to {int}', async function (nrOfTodos) {
+    return shallSeeTodosCountOf(nrOfTodos);
 });
