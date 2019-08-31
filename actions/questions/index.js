@@ -1,3 +1,5 @@
+const { shallSeeTodosOf, } = require('./shallSeeTodosOf.ask');
+
 exports = module.exports = {
-    shallSeeTodosOf: require('./shallSeeTodosOf.ask'),
+    shallSeeTodosOf,
 };

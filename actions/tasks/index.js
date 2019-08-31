@@ -1,4 +1,8 @@
+const { addNewTodo, addNewTodos, } = require('./addNewTodos.task');
+const { visitHomepage, } = require('./visitPage.task');
+
 exports = module.exports = {
-    addNewTodos: require('./addNewTodos.task'),
-    visitHomepage: require('./visitHomepage.task'),
+    addNewTodo, 
+    addNewTodos,
+    visitHomepage,
 };

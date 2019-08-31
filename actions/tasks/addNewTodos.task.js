@@ -1,16 +1,14 @@
-const { element, by } = require('protractor');
+const { element, By, Key, promise, } = require('protractor');
 
-const newtodoInput = element(by.model('newTodo'));
-const todoForm = element(by.css('todo-form'));
+const newtodoInput = element(By.css('.new-todo'));
 
 async function addNewTodos(todos) {
-    const newtodos = todos.split(',').map(addNewTodo);
-    return $q.all(newtodos);
+    const todoFns = todos.split(', ').map(addNewTodo);
+    return promise.all(todoFns);
 }
 
 async function addNewTodo(todo) {
-    await newtodoInput.sendKeys(todo.trim());
-    return todoForm.submit();
+    return await newtodoInput.sendKeys(todo.trim() + '\n');
 }
 
-exports = module.exports = { addNewTodos };
+exports = module.exports = { addNewTodos, addNewTodo, };

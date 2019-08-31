@@ -3,7 +3,7 @@ exports = module.exports = {
         SELENIUM_PROMISE_MANAGER: false,    // Using native async/await
         directConnect: true,                // Bypass Selenium Server
 
-        baseUrl: 'http://todomvc.com/examples/angular/',
+        baseUrl: 'http://todomvc.com/examples/vanillajs',
         getPageTimeout: 60000,              // Default 5000
         allScriptsTimeout: 60000,
 
@@ -17,7 +17,7 @@ exports = module.exports = {
 
         cucumberOpts: {
             requireModule: [],
-            require: ['../steps/**/*.js', '../actions/**/*.js', '../'],
+            require: ['../steps/**/*.js', '../actions/**/*.js', ],
             format: 'json:./.temp/results.json',
             tags: ['@sanity or @fast'],
             strict: true,
@@ -47,5 +47,5 @@ exports = module.exports = {
         onCleanUp: function () {},
 
         onComplete: function () {},
-    }
+    },
 };
