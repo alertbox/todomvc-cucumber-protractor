@@ -1,12 +1,12 @@
-const { addNewTodo, addNewTodos } = require('./add-new-todos.task');
-const { trashTodoList } = require('./trash-todo-list.task');
-const { visitHomepage, visitHashActive, visitHashCompleted } = require('./visit-page.task');
+import { addNewTodo, addNewTodos } from './add-new-todos.task';
+import { trashTodoList } from './trash-todo-list.task';
+import { visitHomepage, visitHashActive, visitHashCompleted } from './visit-page.task';
 
-exports = module.exports = {
+export {
     addNewTodo, 
     addNewTodos,
     trashTodoList,
     visitHomepage,
     visitHashActive,
-    visitHashCompleted
+    visitHashCompleted,
 };

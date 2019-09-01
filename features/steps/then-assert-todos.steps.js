@@ -1,6 +1,6 @@
-const { Then } = require('cucumber');
-const { listOf } = require('../../actions/helpers/strings');
-const { shallSeeTodosOf, shallSeeTodosCountOf } = require('../../actions/questions');
+import { Then } from 'cucumber';
+import { listOf } from '../../actions/helpers/strings';
+import { shallSeeTodosOf, shallSeeTodosCountOf } from '../../actions/questions';
 
 Then('he shall see the number of todos should at least be {int}', async function (nrOfTodos) {
     return shallSeeTodosCountOf(nrOfTodos);

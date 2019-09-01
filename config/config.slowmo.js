@@ -1,3 +1,5 @@
+require('@babel/register');
+
 exports = module.exports = {
     config: {
         SELENIUM_PROMISE_MANAGER: false,    // Using native async/await
@@ -24,8 +26,7 @@ exports = module.exports = {
             tags: ['(@sanity or @fast) and ~@skip', ],
             strict: true,
             dryRun: false,
-            compiler: [],
-            order: 'defined'
+            // compiler: ['js:@babel/register', ],
         },
 
         capabilities: {
@@ -38,7 +39,7 @@ exports = module.exports = {
             { path: '../plugins/ng-optout-browser.plugin.js' },
         ],
 
-        beforeLaunch: function () {},
+        beforeLaunch: function () { require('@babel/register'); },
 
         onPrepare: function () {},
 

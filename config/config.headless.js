@@ -1,3 +1,5 @@
+require('@babel/register');
+
 exports = module.exports = {
     config: {
         SELENIUM_PROMISE_MANAGER: false,    // Using native async/await
@@ -22,7 +24,7 @@ exports = module.exports = {
             tags: ['(@sanity or @fast) and ~@skip', ],
             strict: true,
             dryRun: false,
-            compiler: [],
+            // compiler: ['js:@babel/register', ],
         },
 
         capabilities: {
@@ -31,7 +33,7 @@ exports = module.exports = {
             chromeOptions: {
                 useAutomationExtension: false,
                 args: ['--headless', '--disable-gpu', '--window-size=1280,1024', ]
-            }
+            },
         },
 
         plugins: [

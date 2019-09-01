@@ -60,8 +60,13 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/register": "7.5.5",
     "chai": "4.2.0",
     "chai-as-promised": "7.1.1",
+    "core-js": "3.2.1",
     "cucumber": "5.1.0",
     "eslint": "6.2.2",
     "mkdirp": "0.5.1",
