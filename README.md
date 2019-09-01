@@ -14,6 +14,7 @@ What's included:
 - Uses [`protractor`](https://www.protractortest.org/) + [`cucumberjs`](https://github.com/cucumber/cucumber-js/) frameworks
 - Configured to run in [`Headless chrome`](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/config) as well as in [`Slow-Mo modes`](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/config)
 - Uses ptor plugins to wire [`chai-as-promised`](https://www.chaijs.com/plugins/chai-as-promised/) and `browser` configurations
+- Uses [`babel`](https://babeljs.io/videos) to support Modern `javascript` on Node
 - Uses [`eslint`](https://eslint.org/) with recommended rules to enforce consistent code style
 - Uses [`yarn`](https://yarnpkg.com/en/) scripts for common operations
 
@@ -121,6 +122,7 @@ todomvc-cucumberjs
 │   ├── chai-as-promised.plugin.js           # Plugin to configure chai and chai-as-promised
 │   └── ng-optout-browser.plugin.js          # Plugin to configure protractor browser
 │
+├── .babelrc                                 # Defines presets for Modern Javascript support
 ├── .eslintrc.yml                            # Defines javascript coding styles
 ├── .gitignore                               # Everything that must not be in this repo
 ├── .npmrc                                   # Node configurations for workspace
