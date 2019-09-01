@@ -1,6 +1,6 @@
 # Todo MVC CucumberJS - Vanilla Javascript version
 
-Minimalistic template project to demonstrate Gherkin style End-to-End testing using `protractor` + `cucumberjs`.
+Minimalistic template project to kick start Gherkin style End-to-End tests written in Screenplay pattern using `cucumberjs` + `protractor`.
 
 > **Important!**
 >
