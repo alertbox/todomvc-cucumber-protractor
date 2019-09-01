@@ -1,11 +1,24 @@
-const { browser, } = require('protractor');
+const { browser } = require('protractor');
 
 function visitHomepage() {
-    return visitPage();
+    return visitPage('#');
 }
 
-function visitPage(path = browser.baseUrl) {
+function visitHashActive() {
+    return visitPage('#/active');
+}
+
+function visitHashCompleted() {
+    return visitPage('#/completed');
+}
+
+function visitPage(hash) {
+    const path = browser.baseUrl + '/' + hash + '/';
     return browser.driver.get(path);
 }
 
-exports = module.exports = { visitHomepage, visitPage, };
+exports = module.exports = { 
+    visitHomepage, 
+    visitHashActive, 
+    visitHashCompleted 
+};

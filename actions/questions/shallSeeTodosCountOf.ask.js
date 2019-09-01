@@ -1,4 +1,4 @@
-const { expect, } = require('chai');
+const { expect } = require('chai');
 const { element, By } = require('protractor');
 
 const nrofTodosElement = element(By.css('.todo-count'));
@@ -6,7 +6,7 @@ const nrofTodosElement = element(By.css('.todo-count'));
 async function shallSeeTodosCountOf(nrOfTodos) {
     const actualNrOfTodos = await nrofTodosElement.getText();
     
-    return expect(nrOfTodos).to.be.equal(parseInt(actualNrOfTodos, 10));
+    return expect(parseInt(actualNrOfTodos, 10)).to.be.at.least(nrOfTodos);
 }
 
-exports = module.exports = { shallSeeTodosCountOf, };
+exports = module.exports = { shallSeeTodosCountOf };
