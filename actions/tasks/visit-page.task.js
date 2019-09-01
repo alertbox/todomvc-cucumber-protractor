@@ -1,7 +1,7 @@
 import { browser } from 'protractor';
 
 function visitPage(hash) {
-    const path = browser.baseUrl + '/' + hash + '/';
+    const path = `${browser.baseUrl}/${hash}/`;
     return browser.driver.get(path);
 }
 

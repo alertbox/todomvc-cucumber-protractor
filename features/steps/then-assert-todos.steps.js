@@ -11,5 +11,5 @@ Then('he shall see {string} in the list', async function (todos) {
 });
 
 Then('he shall see both {string} and {string} in the list', async function (oldTodos, newTodos) {
-    return shallSeeTodosOf(listOf(oldTodos + ', ' + newTodos));
+    return shallSeeTodosOf(listOf(`${oldTodos}, ${newTodos}`));
 });

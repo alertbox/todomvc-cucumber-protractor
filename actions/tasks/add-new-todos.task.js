@@ -8,5 +8,5 @@ export async function addNewTodos(todos) {
 }
 
 export async function addNewTodo(todo) {
-    return newtodoInput.sendKeys(todo + '\n');
+    return newtodoInput.sendKeys(`${todo}\n`);
 }
