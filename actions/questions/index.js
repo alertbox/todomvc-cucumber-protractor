@@ -1,7 +1,7 @@
-const { shallSeeTodosOf } = require('./shallSeeTodosOf.ask');
-const { shallSeeTodosCountOf } = require('./shallSeeTodosCountOf.ask');
+const { shallSeeTodosCountOf } = require('./shall-see-todos-countof.ask');
+const { shallSeeTodosOf } = require('./shall-see-todos-of.ask');
 
 exports = module.exports = {
-    shallSeeTodosOf,
-    shallSeeTodosCountOf
+    shallSeeTodosCountOf,
+    shallSeeTodosOf
 };
