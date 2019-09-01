@@ -8,11 +8,11 @@ Minimalistic template project to demonstrate Gherkin style End-to-End testing us
 
 What's included:
 
+- Gherkin style Features, Backgrounds, Scenarios, Tags, and Examples with Data tables
+- Written beyond Page Objects and close enough to Screenplay pattern
 - Uses our favorite [Todo MVC Web App](http://todomvc.com/examples/vanillajs/) to demo E2E tests
-- Gherkin style features, step definitions, page objects, and tags
-- Written in vanilla javascript
 - Uses [`protractor`](https://www.protractortest.org/) + [`cucumberjs`](https://github.com/cucumber/cucumber-js/) frameworks
-- Configured to run Headless chrome as default
+- Configured to run in [`Headless chrome`](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/config) as well as in [`Slow-Mo modes`](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/config)
 - Uses ptor plugins to wire [`chai-as-promised`](https://www.chaijs.com/plugins/chai-as-promised/) and `browser` configurations
 - Uses [`eslint`](https://eslint.org/) with recommended rules to enforce consistent code style
 - Uses [`yarn`](https://yarnpkg.com/en/) scripts for common operations
@@ -75,50 +75,57 @@ Manage any merge conflicts, commit, and then push them to your upstream repo.
 ### Available `yarn` scripts
 
 - `yarn install` - install all project dependencies only.
-- `yarn test` - run all the fast, slow, and external tests.
+- `yarn test` - run all the tests fast in headless mode, and external tests.
 - `yarn run clean:install` - remove temp data, cache, and install everything as needed, then run the webdriver-manager for you.
 - `yarn run clean` - remove temp data, node modules, and clear cache only.
 - `yarn prepare` - update and run webdriver-manager for you.
-- `yarn run test:fast` - run all the fast tests.
+- `yarn run test:fast` - run all the tests fast in headless mode.
+- `yarn run test:slow` - run all the tests in slow-mo mode.
 - `yarn run vet:quiet` - check for code violations.
 
 ### File structure of starter kit
-```bash
+```sh
 todomvc-cucumberjs
 │
 ├── .vscode/                                 # VS Code workspace configurations
-│   ├── extensions.json                      
+│   ├── extensions.json
 │   ├── launch.json
 │   ├── settings.json
 │   └── tasks.json
 │
-├── config/                                   # Contains all Ptor test configurations
-│   └── config.local.js                       # Ptor configuration file to run locally
-│
-├── e2e/                                      # Working directory for Test Automation files
-│   ├── features/                             # Gherkin features and scenarios
-│   │   └── search-contributor.feature        # Example feature, scenarios, data tables, and tags for GitHub search
+├── actions/                                 # Contains all Interactions
+│   ├── helpers/                             # Helper modules and methods
+│   │   └── strings.js                       # Example string manipulator for Todos
 │   │
-│   ├── pages/                                # Page objects for Step Definitions
-│   │   ├── index.js                          # Main entry point barrel file
-│   │   ├── navigator.js                      # Example page object for URL navigation
-│   │   ├── search-summary.component.js       # Example page object for verifying DOM content
-│   │   └── search.component.js               # Example page object for feeding data and submitting
+│   ├── questions/                           # Questions to ask about the State
+│   │   ├── index.js
+│   │   └── *.ask.js                         # Example Questions to ask about the state of the Todo app
 │   │
-│   └── steps/                                # Step definitions for Gherkin scenarios
-│       └── search-contributor.steps.js       # Example steps definitions for GitHub contributor search and verify
+│   └── tasks/                               # Steps performed by the Actor
+│       ├── index.js
+│       └── *.task.js                        # Example Tasks to interact with the Todo app
 │
-├── hooks/                                    # Contains all the hooks for Cucumber
+├── config/                                  # Contains all Ptor test configurations
+│   ├── config.headless.js                   # Ptor headless configuration
+│   └── config.slowmo.js                     # Ptor slow-mo configuration
 │
-├── plugins/                                  # Contains all the Ptor plugins 
-│   ├── chai-as-promised.plugin.js            # Plugin to configure chai and chai-as-promised
-│   └── ng-optout-browser.plugin.js           # Plugin to configure protractor browser
+├── features/                                # Gherkin style features and scenarios
+│   ├── steps/                               # Step definition scripts
+│   │   └── *.steps.js                       # Example steps to interact with the Todo app
+│   │
+│   └── *.feature                            # Example features and scenarios to play
 │
-├── .eslintrc.yml                             # Defines javascript coding styles
-├── .gitignore                                # Everything that must not be in this repo
-├── .npmrc                                    # Node configurations for workspace
-├── package.json                              # Our javascript and node dependencies
-└── README.md                                 # This file!
+├── hooks/                                   # Contains all the hooks for Cucumber
+│
+├── plugins/                                 # Contains all the Ptor plugins 
+│   ├── chai-as-promised.plugin.js           # Plugin to configure chai and chai-as-promised
+│   └── ng-optout-browser.plugin.js          # Plugin to configure protractor browser
+│
+├── .eslintrc.yml                            # Defines javascript coding styles
+├── .gitignore                               # Everything that must not be in this repo
+├── .npmrc                                   # Node configurations for workspace
+├── package.json                             # Our javascript and node dependencies
+└── README.md                                # This file!
 ```
 
 ## Contributing
