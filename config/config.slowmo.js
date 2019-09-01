@@ -1,11 +1,13 @@
 exports = module.exports = {
     config: {
         SELENIUM_PROMISE_MANAGER: false,    // Using native async/await
-        directConnect: true,                // Bypass Selenium Server
+        directConnect: false,               // Using Selenium Server
+        blockingProxy: true,                // Experimenting SlowMo
+        highlightDelay: 3000,               // In Milliseconds
 
         baseUrl: 'http://todomvc.com/examples/vanillajs',
-        getPageTimeout: 60000,              // Default 5000
-        allScriptsTimeout: 60000,
+        getPageTimeout: 60000,              // In Milliseconds, Default 5000
+        allScriptsTimeout: 60000,           // In Milliseconds
 
         framework: 'custom',
         frameworkPath: require.resolve('protractor-cucumber-framework'),
@@ -17,27 +19,23 @@ exports = module.exports = {
 
         cucumberOpts: {
             requireModule: [],
-            require: ['../steps/**/*.js', '../actions/**/*.js', ],
+            require: ['../steps/**/*.js', ],
             format: 'json:./.temp/results.json',
-            tags: ['@sanity or @fast'],
+            tags: ['(@sanity or @fast) and ~@skip', ],
             strict: true,
             dryRun: false,
             compiler: [],
+            order: 'defined'
         },
 
         capabilities: {
             browserName: 'chrome',
-            shardTestFiles: true,
-            directConnect: true,
-            // chromeOptions: {
-            //     useAutomationExtension: false,
-            //     args: ['--headless', '--disable-gpu', '--window-size=1280,1024', ],
-            // },
+            shardTestFiles: true
         },
 
         plugins: [
-            { path: '../plugins/chai-as-promised.plugin.js', }, 
-            { path: '../plugins/ng-optout-browser.plugin.js', },
+            { path: '../plugins/chai-as-promised.plugin.js' }, 
+            { path: '../plugins/ng-optout-browser.plugin.js' },
         ],
 
         beforeLaunch: function () {},
@@ -46,6 +44,6 @@ exports = module.exports = {
 
         onCleanUp: function () {},
 
-        onComplete: function () {},
+        onComplete: function () {}
     },
 };
