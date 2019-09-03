@@ -118,6 +118,7 @@ todomvc-cucumberjs
 │   └── *.feature                            # Example features and scenarios to play
 │
 ├── hooks/                                   # Contains all the hooks for Cucumber
+│   └── skip-or-deprecated.hook.js           # Skip any scenario if tagged as @skip/@ignore/@deprecated
 │
 ├── plugins/                                 # Contains all the Ptor plugins 
 │   ├── chai-as-promised.plugin.js           # Plugin to configure chai and chai-as-promised
