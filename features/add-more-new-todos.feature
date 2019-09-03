@@ -4,7 +4,7 @@ Feature: Adding more things to do to the list
     In order to avoid having to remember things that needs to do
     KP wants to records all the things needs to get done.
     
-    @regression @integration @ci
+    @regression @integration @ci @deprecated
     Scenario Outline: Add more new items to the todo list
 
         Given that KP has a list of things to do such as "<todo-list>"

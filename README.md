@@ -1,6 +1,7 @@
-# Todo MVC CucumberJS - Vanilla Javascript version
+# Protractor + CucumberJS - Todo MVC Starter
+###### ES6 / Vanilla Javascript version
 
-Minimalistic template project to kick start Gherkin style End-to-End tests written in Screenplay pattern using `cucumberjs` + `protractor`.
+Minimalistic template project to kick start Behavior-driven/Gherkin style End-to-End tests automation, written in Screenplay pattern using `cucumberjs` + `protractor`.
 
 > **Important!**
 >
@@ -8,7 +9,7 @@ Minimalistic template project to kick start Gherkin style End-to-End tests writt
 
 What's included:
 
-- Gherkin style Features, Backgrounds, Scenarios, Tags, and Examples with Data tables
+- Gherkin style [Features, Backgrounds, Scenarios, Examples with Data tables](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/features), and [Tags with Hooks](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/hooks) to `@skip` / `@ignore` / `@deprecated`
 - Written beyond Page Objects and close enough to Screenplay pattern
 - Uses our favorite [Todo MVC Web App](http://todomvc.com/examples/vanillajs/) to demo E2E tests
 - Uses [`protractor`](https://www.protractortest.org/) + [`cucumberjs`](https://github.com/cucumber/cucumber-js/) frameworks

@@ -19,7 +19,7 @@ exports = module.exports = {
 
         cucumberOpts: {
             requireModule: [],
-            require: ['../features/**/*.steps.js', ],
+            require: ['../hooks/**/*.hook.js', '../features/**/*.steps.js', ],
             format: 'json:./.temp/results.json',
             tags: ['(@sanity or @fast) and ~@skip', ],
             strict: true,
