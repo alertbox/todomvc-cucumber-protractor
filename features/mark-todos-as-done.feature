@@ -1,5 +1,5 @@
 # language: en
-@todo-managing @functional @gui @uat @wip
+@todo-managing @functional @gui @uat @wip @ignore
 Feature: Ticking off todos when done
     In order to avoid having to remember things that needs to do
     KP wants to records all the things needs to get done.
