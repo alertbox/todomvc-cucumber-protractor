@@ -14,7 +14,7 @@ What's included:
 - Gherkin style [Features, Backgrounds, Scenarios, Examples with Data tables](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/features), and [Tags with Hooks](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/hooks) to `@skip` / `@ignore` / `@deprecated`
 - Written beyond Page Objects and close enough to Screenplay pattern
 - Uses our favorite [Todo MVC Web App](http://todomvc.com/examples/vanillajs/) to demo E2E tests
-- Generates an [html report](https://github.com/wswebcreation/protractor-multiple-cucumber-html-reporter-plugin) with detailed analysis on the test results including screenshots
+- Provides an [HTML Report](public/report/index.html) with detailed analysis on the test results including screenshots
 - Uses [`protractor`](https://www.protractortest.org/) + [`cucumberjs`](https://github.com/cucumber/cucumber-js/) frameworks
 - Configured to run in [`Headless chrome`](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/config) as well as in [`Slow-Mo modes`](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/config)
 - Uses ptor plugins to wire [`chai-as-promised`](https://www.chaijs.com/plugins/chai-as-promised/) and `browser` configurations
@@ -135,8 +135,9 @@ todomvc-cucumberjs
 │       └── index.html                       # Main page of the test report
 │
 ├── .babelrc                                 # Defines presets for Modern Javascript support
+├── .eslintignore                            # Everything that must be excluded from coding styles
 ├── .eslintrc.yml                            # Defines javascript coding styles
-├── .gitignore                               # Everything that must not be in this repo
+├── .gitignore                               # Everything that must be excluded from the git repo
 ├── .npmrc                                   # Node configurations for workspace
 ├── package.json                             # Our javascript and node dependencies
 └── README.md                                # This file!
