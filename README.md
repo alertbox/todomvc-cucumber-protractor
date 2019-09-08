@@ -1,6 +1,8 @@
 # Protractor + CucumberJS - Todo MVC Starter
 ###### ES6 / Vanilla Javascript version
 
+<a href="http://todomvc.com/examples/vanillajs/">![todo-mvc](http://todomvc.com/site-assets/screenshot.png)</a>
+
 Minimalistic template project to kick start Behavior-driven/Gherkin style End-to-End tests automation, written in Screenplay pattern using `cucumberjs` + `protractor`.
 
 > **Important!**
