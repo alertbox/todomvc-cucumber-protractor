@@ -1,7 +1,7 @@
 # Protractor + CucumberJS - Todo MVC Starter
 ###### ES6 / Vanilla Javascript version
 
-<a href="http://todomvc.com/examples/vanillajs/">![todo-mvc](http://todomvc.com/site-assets/screenshot.png)</a>
+<a href="http://todomvc.com/examples/vanillajs/">![todomvc](docs/todomvc-play.gif)</a>
 
 Minimalistic template project to kick start Behavior-driven/Gherkin style End-to-End tests automation, written in Screenplay pattern using `cucumberjs` + `protractor`.
 
@@ -113,6 +113,8 @@ todomvc-cucumberjs
 ├── config/                                  # Contains all Ptor test configurations
 │   ├── config.headless.js                   # Ptor headless configuration
 │   └── config.slowmo.js                     # Ptor slow-mo configuration
+│
+├── docs/                                    # Contains all documentation
 │
 ├── features/                                # Gherkin style features and scenarios
 │   ├── steps/                               # Step definition scripts
