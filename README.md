@@ -12,6 +12,7 @@ What's included:
 - Gherkin style [Features, Backgrounds, Scenarios, Examples with Data tables](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/features), and [Tags with Hooks](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/hooks) to `@skip` / `@ignore` / `@deprecated`
 - Written beyond Page Objects and close enough to Screenplay pattern
 - Uses our favorite [Todo MVC Web App](http://todomvc.com/examples/vanillajs/) to demo E2E tests
+- Generates an [html report](https://github.com/wswebcreation/protractor-multiple-cucumber-html-reporter-plugin) with detailed analysis on the test results including screenshots
 - Uses [`protractor`](https://www.protractortest.org/) + [`cucumberjs`](https://github.com/cucumber/cucumber-js/) frameworks
 - Configured to run in [`Headless chrome`](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/config) as well as in [`Slow-Mo modes`](https://github.com/kosalanuwan/todomvc-cucumberjs/tree/master/config)
 - Uses ptor plugins to wire [`chai-as-promised`](https://www.chaijs.com/plugins/chai-as-promised/) and `browser` configurations
@@ -118,11 +119,16 @@ todomvc-cucumberjs
 │   └── *.feature                            # Example features and scenarios to play
 │
 ├── hooks/                                   # Contains all the hooks for Cucumber
+│   ├── capture-screenshot.hook.js           # Capture and attache a screenshot when assertion fails
 │   └── skip-or-deprecated.hook.js           # Skip any scenario if tagged as @skip/@ignore/@deprecated
 │
 ├── plugins/                                 # Contains all the Ptor plugins 
 │   ├── chai-as-promised.plugin.js           # Plugin to configure chai and chai-as-promised
 │   └── ng-optout-browser.plugin.js          # Plugin to configure protractor browser
+│
+├── public/                                  # Public access folder which can be published if needed
+│   └── report                               # Contains all the assets of the test report
+│       └── index.html                       # Main page of the test report
 │
 ├── .babelrc                                 # Defines presets for Modern Javascript support
 ├── .eslintrc.yml                            # Defines javascript coding styles
