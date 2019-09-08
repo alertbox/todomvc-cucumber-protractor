@@ -1,4 +1,4 @@
-import { Before} from 'cucumber';
+import { Before } from 'cucumber';
 
 Before({ tags: '@skip or @ignore or @deprecated'}, function () { return 'skipped'; });
 
