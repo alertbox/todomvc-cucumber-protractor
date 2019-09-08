@@ -136,7 +136,7 @@ todomvc-cucumberjs
 │
 ├── .babelrc                                 # Defines presets for Modern Javascript support
 ├── .eslintignore                            # Everything that must be excluded from coding styles
-├── .eslintrc.yml                            # Defines javascript coding styles
+├── .eslintrc.yaml                           # Defines javascript coding styles
 ├── .gitignore                               # Everything that must be excluded from the git repo
 ├── .npmrc                                   # Node configurations for workspace
 ├── package.json                             # Our javascript and node dependencies
