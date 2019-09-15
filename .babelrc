@@ -3,7 +3,7 @@
         ["@babel/preset-env", {
             "targets": { "node": "current" },
             "useBuiltIns": "entry",
-            "corejs": { "version": 3 },
-        }],
-    ],
+            "corejs": { "version": 3 }
+        }]
+    ]
 }
