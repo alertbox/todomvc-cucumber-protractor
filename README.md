@@ -79,14 +79,13 @@ Manage any merge conflicts, commit, and then push them to your upstream repo.
 
 ### Available `yarn` scripts
 
-- `yarn install` - install all project dependencies only.
-- `yarn test` - run all the tests fast in headless mode, and external tests.
-- `yarn run clean:install` - remove temp data, cache, and install everything as needed, then run the webdriver-manager for you.
-- `yarn run clean` - remove temp data, node modules, and clear cache only.
-- `yarn prepare` - update and run webdriver-manager for you.
-- `yarn run test:fast` - run all the tests fast in headless mode.
-- `yarn run test:slow` - run all the tests in slow-mo mode.
-- `yarn run vet:quiet` - check for code violations.
+- `install` - install all project dependencies only.
+- `test` - run all the tests fast in headless mode, and external tests.
+- `reset` - remove temp data, cache, and install everything as needed, then run the webdriver-manager for you.
+- `prepare` - update and run webdriver-manager for you.
+- `test:fast` - run all the tests fast in headless mode.
+- `test:slow` - run all the tests in slow-mo mode.
+- `lint` - check for code violations.
 
 ### File structure of starter kit
 ```sh
@@ -136,7 +135,7 @@ todomvc-gherkin-cucumberjs
 │
 ├── .babelrc                                 # Defines presets for Modern Javascript support
 ├── .eslintignore                            # Everything that must be excluded from coding styles
-├── .eslintrc.yaml                           # Defines javascript coding styles
+├── .eslintrc                                # Defines javascript coding styles
 ├── .gitignore                               # Everything that must be excluded from the git repo
 ├── .npmrc                                   # Node configurations for workspace
 ├── package.json                             # Our javascript and node dependencies
