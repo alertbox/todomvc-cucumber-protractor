@@ -25,8 +25,8 @@
   "bugs": "https://github.com/kosalanuwan/todomvc-gherkin-cucumberjs/issues",
   "homepage": "https://github.com/kosalanuwan/todomvc-gherkin-cucumberjs#readme",
   "engines": {
-    "node": ">=10.15",
-    "yarn": ">=1.17"
+    "node": ">= 10.15",
+    "yarn": ">= 1.17"
   },
   "scripts": {
     "wd": "webdriver-manager",
