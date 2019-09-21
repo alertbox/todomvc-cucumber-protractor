@@ -30,7 +30,7 @@
   },
   "scripts": {
     "wd": "webdriver-manager",
-    "prepare:wd": "yarn wd shutdown && yarn wd update && yarn wd start",
+    "prepare:wd": "yarn wd shutdown && yarn wd update",
     "reset": "npx rimraf yarn.lock node_modules/ public/ && yarn cache clean --force && yarn install",
     "preinstall": "echo \"WARNING: no pre-install specified\"",
     "install": "echo \"WARNING: no install specified. Try reset instead\"",
@@ -44,8 +44,8 @@
     "test:external": "echo \"WARNING: no test-external specified\"",
     "test": "yarn test:fast && yarn test:external",
     "posttest": "yarn lint --quiet",
-    "prestart": "echo \"WARNING: no pre-start specified\"",
-    "start": "echo \"WARNING: no start specified\"",
+    "prestart": "yarn prepare",
+    "start": "yarn wd start",
     "poststart": "echo \"WARNING: no post-start specified\""
   },
   "dependencies": {},
@@ -60,10 +60,8 @@
     "cucumber": "5.1.0",
     "eslint": "6.4.0",
     "eslint-plugin-import": "2.18.2",
-    "mkdirp": "0.5.1",
     "protractor": "5.4.2",
     "protractor-cucumber-framework": "6.1.3",
-    "protractor-multiple-cucumber-html-reporter-plugin": "1.8.1",
-    "rimraf": "3.0.0"
+    "protractor-multiple-cucumber-html-reporter-plugin": "1.8.1"
   }
 }
