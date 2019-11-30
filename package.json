@@ -44,7 +44,7 @@
     "test:external": "echo \"WARNING: no test-external specified\"",
     "test": "yarn test:fast && yarn test:external",
     "posttest": "yarn lint --quiet",
-    "prestart": "yarn prepare",
+    "prestart": "yarn prepare:wd",
     "start": "yarn wd start",
     "poststart": "echo \"WARNING: no post-start specified\""
   },
