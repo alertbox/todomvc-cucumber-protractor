@@ -66,8 +66,9 @@ With VS Code:
 git clone https://github.com/<your-github-account>/todomvc-gherkin-cucumberjs
 cd todomvc-gherkin-cucumberjs
 ```
-- Run `yarn install` from the project root.
-- Run `yarn test` from the project root.
+- Run `yarn install` to install all the dependencies.
+- Run `yarn start` to boot the webdriver manager.
+- Run `yarn test` from a new terminal to run tests.
 
 Occasionally, you will want to merge changes in the upstream repo, the official starter kit repo.
 ```bash
@@ -80,6 +81,7 @@ Manage any merge conflicts, commit, and then push them to your upstream repo.
 ### Available `yarn` scripts
 
 - `install` - install all project dependencies only.
+- `start` - update and run the webdriver manager.
 - `test` - run all the tests fast in headless mode, and external tests.
 - `reset` - remove temp data, cache, and install everything as needed, then run the webdriver-manager for you.
 - `prepare` - update and run webdriver-manager for you.
