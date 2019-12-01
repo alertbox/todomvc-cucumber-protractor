@@ -25,6 +25,7 @@ exports = module.exports = {
             tags: ['(@sanity or @fast) and ~@skip', ],
             strict: true,
             dryRun: false,
+            
             // compiler: ['js:@babel/register', ],
         },
 

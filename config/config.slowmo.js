@@ -1,4 +1,5 @@
 require('@babel/register');
+const project = require('../package.json');
 
 exports = module.exports = {
     config: {
@@ -26,12 +27,17 @@ exports = module.exports = {
             tags: ['(@sanity or @fast) and ~@skip', ],
             strict: true,
             dryRun: false,
+            
             // compiler: ['js:@babel/register', ],
         },
 
         capabilities: {
             browserName: 'chrome',
-            shardTestFiles: true
+            shardTestFiles: true,
+            metadata: {
+                app: { name: project.name, version: project.version },
+                platform: { name: 'osx', version: 'Sierra' }
+            },
         },
 
         plugins: [
