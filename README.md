@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/kosalanuwan/todomvc-cucumber-protractor) 
+
 # CucumberJS + Protractor - Starter
 ###### ES6 / Vanilla Javascript version
 
