@@ -158,6 +158,10 @@ There are many ways in which you can participate in the project, for example:
 
 If you are interested in fixing issues and contributing directly to the code base, please see the [Prerequisites](#prerequisites) and [How to build and run from source](#build-and-run).
 
+## Code of Conduct
+
+This project has adopted the [Contributor Covenant](http://contributor-covenant.org/) [Open Source Code of Conduct](CODE_OF_CONDUCT.md) template. This same template is used by [over 350,000 open source projects](https://github.com/search?l=Markdown&q=%22Contributor+Covenant%22+fork%3Afalse&type=Code) such as Linux, .NET Foundation, Google, and others in their open source projects.
+
 ## Feedback
 
 - Ask a question on [StackOverflow](https://stackoverflow.com/search?tab=newest&q=protractor%20cucumberjs)
@@ -176,10 +180,6 @@ Thank you to all our Open Collective backers!
 [Become a backer!](https://opencollective.com/alertbox#backer)
 
 <a href="https://opencollective.com/alertbox#backers" target="_blank"><img src="https://opencollective.com/alertbox/backers.svg?width=890"></a>
-
-## Code of Conduct
-
-The Alertbox Open Source Conduct is an instantiation of the [TODO Group](https://todogroup.org/) Code of Conduct template, that captures the culture of equality, respect, and inclusion. This same template is used by industry colleagues such as Microsoft, Facebook, Twitter, GitHub, Yahoo, and others in their open source projects.
 
 ## License
 
