@@ -170,6 +170,13 @@ If you are interested in fixing issues and contributing directly to the code bas
 
 Many of the core components and dependencies live in their own repositories on GitHub. For example, the [`cucumberjs`](https://github.com/cucumber/cucumber-js) and the [`protractor`](https://github.com/angular/protractor) have their own repositories. For a complete list, please have a look at the dependencies on the [`project.json`](https://github.com/kosalanuwan/todomvc-cucumber-protractor/blob/master/package.json).
 
+## Backers
+
+Thank you to all our Open Collective backers!
+[Become a backer!](https://opencollective.com/alertbox#backer)
+
+<a href="https://opencollective.com/alertbox#backers" target="_blank"><img src="https://opencollective.com/alertbox/backers.svg?width=890"></a>
+
 ## Code of Conduct
 
 The Alertbox Open Source Conduct is an instantiation of the [TODO Group](https://todogroup.org/) Code of Conduct template, that captures the culture of equality, respect, and inclusion. This same template is used by industry colleagues such as Microsoft, Facebook, Twitter, GitHub, Yahoo, and others in their open source projects.
