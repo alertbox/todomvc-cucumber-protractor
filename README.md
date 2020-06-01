@@ -160,11 +160,11 @@ If you are interested in fixing issues and contributing directly to the code bas
 
 ## Code of Conduct
 
-This project has adopted the [Contributor Covenant](http://contributor-covenant.org/) [Open Source Code of Conduct](CODE_OF_CONDUCT.md) template. This same template is used by [over 350,000 open source projects](https://github.com/search?l=Markdown&q=%22Contributor+Covenant%22+fork%3Afalse&type=Code) such as Linux, .NET Foundation, Google, and others in their open source projects.
+This project has adopted the [Contributor Covenant](http://contributor-covenant.org/) template for [Open Source Code of Conduct](CODE_OF_CONDUCT.md). This same template is used by [over 350,000 open source projects](https://github.com/search?l=Markdown&q=%22Contributor+Covenant%22+fork%3Afalse&type=Code) such as Linux, .NET Foundation, Google, and others in their open source projects.
 
 ## Feedback
 
-- Ask a question on [StackOverflow](https://stackoverflow.com/search?tab=newest&q=protractor%20cucumberjs)
+- Ask a question on [StackOverflow](https://stackoverflow.com/search?tab=relevance&q=%5bprotractor%5d%20%5bcucumberjs%5d%20is%3aquestion)
 - Request a new feature on [GitHub](https://github.com/kosalanuwan/todomvc-cucumber-protractor/blob/master/CONTRIBUTING.md)
 - Up vote [popular feature requests](https://github.com/kosalanuwan/todomvc-cucumber-protractor/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc)
 - [File an issue](https://github.com/kosalanuwan/todomvc-cucumber-protractor/issues)
